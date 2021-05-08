@@ -1,4 +1,4 @@
-package pl.edu.pwsztar.domain;
+package pl.edu.pwsztar.chess.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

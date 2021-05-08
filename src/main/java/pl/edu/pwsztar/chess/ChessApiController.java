@@ -1,4 +1,4 @@
-package pl.edu.pwsztar.domain;
+package pl.edu.pwsztar.chess;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import pl.edu.pwsztar.domain.dto.FigureMoveDto;
+import pl.edu.pwsztar.chess.domain.ChessFacade;
+import pl.edu.pwsztar.chess.dto.FigureMoveDto;
 
 @Controller
 @RequestMapping(value="/api")

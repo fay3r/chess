@@ -1,6 +1,6 @@
-package pl.edu.pwsztar.domain;
+package pl.edu.pwsztar.chess.domain;
 
-import pl.edu.pwsztar.domain.dto.FigureMoveDto;
+import pl.edu.pwsztar.chess.dto.FigureMoveDto;
 
 import java.util.HashMap;
 

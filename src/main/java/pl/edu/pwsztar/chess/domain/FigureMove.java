@@ -1,7 +1,7 @@
-package pl.edu.pwsztar.domain;
+package pl.edu.pwsztar.chess.domain;
 
 import lombok.*;
-import pl.edu.pwsztar.domain.enums.FigureType;
+import pl.edu.pwsztar.chess.enums.FigureType;
 
 @Builder(toBuilder = true)
 @NoArgsConstructor

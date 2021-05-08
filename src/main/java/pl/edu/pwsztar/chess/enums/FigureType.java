@@ -1,4 +1,4 @@
-package pl.edu.pwsztar.domain.enums;
+package pl.edu.pwsztar.chess.enums;
 
 public enum FigureType {
     KING,

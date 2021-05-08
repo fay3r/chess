@@ -1,9 +1,9 @@
-package pl.edu.pwsztar.domain.dto;
+package pl.edu.pwsztar.chess.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import pl.edu.pwsztar.domain.enums.FigureType;
+import pl.edu.pwsztar.chess.enums.FigureType;
 
 import java.io.Serializable;
 

@@ -1,14 +1,14 @@
-package pl.edu.pwsztar.domain;
+package pl.edu.pwsztar.chess.domain;
 
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.transaction.annotation.Transactional;
-import pl.edu.pwsztar.domain.dto.FigureMoveDto;
+import pl.edu.pwsztar.chess.dto.FigureMoveDto;
 import static java.util.Objects.requireNonNull;
 
 @Transactional
-class ChessFacade {
+public class ChessFacade {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ChessFacade.class);
 

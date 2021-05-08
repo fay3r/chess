@@ -1,4 +1,4 @@
-package pl.edu.pwsztar.domain;
+package pl.edu.pwsztar.chess.domain;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
