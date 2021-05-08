@@ -1,4 +1,4 @@
-package pl.edu.pwsztar.controller;
+package pl.edu.pwsztar.domain;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,6 +16,13 @@ public class ChessApiController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ChessApiController.class);
 
+    private final ChessFacade chessFacade;
+
+    ChessApiController(ChessFacade chessFacade){
+        this.chessFacade = chessFacade;
+    }
+
+
     @CrossOrigin
     @PostMapping(value = "/chess/is-correct-move")
     public ResponseEntity<Boolean> isCorrectMove(@RequestBody FigureMoveDto figureMoveDto) {
@@ -23,6 +30,6 @@ public class ChessApiController {
 
         // TODO: true = ruch dozwolony (figura moze przemiescic sie z punktu source do punktu destination)
         // TODO: false = ruch zabroniony (figura nie moze przemiescic sie z punktu source do punktu destination)
-        return ResponseEntity.ok(true);     // TODO: teraz figura moze przemieszczac sie do dowolnego pola
+        return ResponseEntity.ok(chessFacade.makeMove(figureMoveDto));     // TODO: teraz figura moze przemieszczac sie do dowolnego pola
     }
 }
